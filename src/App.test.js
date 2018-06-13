@@ -1,6 +1,7 @@
 import App from './App';
 import Footer from './Footer';
 import Header from './Header';
+import HeaderNavbar from './HeaderNavbar';
 import React from 'react';
 import { shallow } from 'enzyme';
 
@@ -17,3 +18,8 @@ it('contains Footer', () => {
   const wrapper = shallow(<App />);
   expect(wrapper).toContainReact(<Footer />);
 });
+
+it('contains HeaderNavbar', () => {
+  const wrapper = shallow(<App/>);
+  expect(wrapper).toContainReact(<HeaderNavbar />);
+})

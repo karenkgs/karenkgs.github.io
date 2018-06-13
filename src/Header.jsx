@@ -2,12 +2,12 @@ import './assets/css/App.css';
 
 import React, { Fragment } from 'react';
 
-import logo from './assets/image/logo.png'
+import me from './assets/image/me.jpeg'
 
 const Header = () => (
     <Fragment>
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={me} className="App-logo" alt="Me" />
             <h1 className="App-title">Karen Garcia</h1>
         </header>
     </Fragment>
