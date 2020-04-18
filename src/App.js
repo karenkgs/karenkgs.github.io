@@ -19,9 +19,9 @@ function App() {
           </div>
         </nav>
       </header>
-      <body>
+      {/* <body> */}
         <p>This is the body</p>
-      </body>
+      {/* </body> */}
       <footer>
         Karen inc 2020
       </footer>
