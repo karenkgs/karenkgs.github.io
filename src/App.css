@@ -2,37 +2,57 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+}
+
+.App-header .left {
+  margin-right: auto;
+  width: 20vw; /* 20% of the App-header */
+  text-align: left;
+}
+
+.App-header .left p {
+  margin-left: 21px;
+}
+
+.App-header .left p span {
   color: white;
+  font-family: monospace;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header nav {
+  width: 80vw; /* 80% of the App-header */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header nav ul {
+  list-style-type: none; /* Removes list markers */
+  text-align: right; /* Moves everything to the right */
+  margin-right: 17px; /* Leaves a small space in the end */
+}
+
+.App-header nav ul li {
+  display: inline;  /* Makes links show side by side */
+}
+
+.App-header nav ul li a {
+  padding: 8px; /* Making it bigger so there's clickable space between them */
+  margin: 6px; /* Regular space */
+  color: white;
+  text-decoration: none; /* Removes annoying underline */
+  font-family: monospace;
+}
+
+/* Change the color of links on hover */
+.App-header nav ul li a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.App-header nav ul li a.active {
+  background-color: black;
+  color: white;
 }
